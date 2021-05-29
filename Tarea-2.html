@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea-2</title>
+</head>
+<body>
+    <script>
+
+        var array=[];
+        var posicion;
+        var respuesta;
+        var mayor=0;
+
+        for(posicion=0;posicion<=10;posicion++)
+        {
+            respuesta=prompt('Ingrese un numero: ','');
+            array[posicion]=respuesta;
+
+            if(mayor<respuesta)
+            {
+                mayor=array[posicion];
+            }
+
+        }
+
+        document.write('El numero mas grande que se ingreso fue: '+ mayor);
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea-1</title>
+
+</head>
+<body>
+    <script>{
+        
+        var Distancia;
+        var pie='Pie';
+        
+
+        Distancia=prompt('Ingrese la distancia:','');
+
+        if(Distancia>=0 && Distancia<= 1000)
+         {  
+             document.write("Si tiene que recorrer la distancia de " + Distancia + "m lo va a hacer a pie.");
+         }  
+        else if(Distancia>1000 && Distancia<= 10000)
+         {
+             document.write("Si tiene que recorrer la distancia de " + Distancia + "m lo va a hacer a bicicleta.");
+
+         }  
+        else if (Distancia>9999 && Distancia<= 30000)
+         {
+             document.write("Si tiene que recorrer la distancia de " + Distancia + "m lo va a hacer a colectivo.");
+         }
+        else if (Distancia>29999 && Distancia<= 100000)
+         {
+             document.write("Si tiene que recorrer la distancia de " + Distancia + "m lo va a hacer a auto.");
+         }
+        else {
+            document.write("Si tiene que recorrer la distancia de " + Distancia + "m lo va a hacer a avion.");
+         }
+    }
+    </script>
+</body>
+</html>
