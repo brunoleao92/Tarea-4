@@ -9,23 +9,24 @@
 <body>
     <script>
 
-        var array=[];
+        var array=[10];
         var posicion;
         var respuesta;
         var mayor=0;
 
-        for(posicion=0;posicion<=10;posicion++)
+        for(posicion=0;posicion<10;posicion++)
         {
             respuesta=prompt('Ingrese un numero: ','');
+            respuesta=parseInt(respuesta);
             array[posicion]=respuesta;
 
-            if(mayor<respuesta)
+            if(mayor<array[posicion])
             {
                 mayor=array[posicion];
             }
 
         }
-
+       
         document.write('El numero mas grande que se ingreso fue: '+ mayor);
     </script>
    
